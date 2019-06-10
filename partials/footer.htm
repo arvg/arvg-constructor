@@ -1,0 +1,35 @@
+description = "footer"
+==
+<script src="{{ [
+'assets/vendor/jquery/jquery-3.2.1.min.js',
+'assets/vendor/bootstrap/js/popper.js',
+'assets/vendor/bootstrap/js/bootstrap.min.js',
+'assets/vendor/select2/select2.min.js',
+'assets/vendor/countdowntime/flipclock.min.js',
+'assets/vendor/countdowntime/moment.min.js',
+'assets/vendor/countdowntime/moment-timezone.min.js',
+'assets/vendor/countdowntime/moment-timezone-with-data.min.js',
+'assets/vendor/countdowntime/countdowntime.js'
+]|theme }}"></script>
+<script>
+var fecha = '{{ this.theme.fecha_limite }}';
+var anio = fecha.substr(0,4);
+var mes = fecha.substr(5,2);
+var dia = fecha.substr(8,2);
+$('.cd100').countdown100({
+	endtimeYear: anio,
+	endtimeMonth: mes,
+	endtimeDate: dia,
+	endtimeHours: 13,
+	endtimeMinutes: 0,
+	endtimeSeconds: 0,
+	timeZone: "America/Lima"
+});
+</script>
+<script src="vendor/tilt/tilt.jquery.min.js"></script>
+<script >
+	$('.js-tilt').tilt({
+		scale: 1.1
+	})
+</script>
+<script src="js/main.js"></script>

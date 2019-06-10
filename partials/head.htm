@@ -1,0 +1,17 @@
+description = "head"
+==
+<title>{{ this.page.meta_title }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ this.page.meta_description }}">
+<link rel="icon" type="image/png" href="{{ 'assets/images/icons/favicon.ico'|theme }}"/>
+
+<link rel="stylesheet" type="text/css" href="{{ [
+'assets/vendor/bootstrap/css/bootstrap.min.css',
+'assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css',
+'assets/vendor/animate/animate.css',
+'assets/vendor/select2/select2.min.css',
+'assets/vendor/countdowntime/flipclock.css',
+'assets/css/util.css',
+'assets/css/main.css'
+]|theme }}">

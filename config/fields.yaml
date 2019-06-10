@@ -1,0 +1,6 @@
+tabs:
+    fields:
+      fecha_limite:
+        label: Fecha Limite
+        type: datepicker
+        mode: date
