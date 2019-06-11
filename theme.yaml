@@ -2,5 +2,5 @@ name: arvg-constructor
 description: 'Web en construcción'
 author: 'Ariel Vilchez'
 homepage: 'http://arvg.com.ve'
-code: ArielVilchez
+code: 
 form: config/fields.yaml
