@@ -1,6 +1,36 @@
 tabs:
+    stretch: true
+    defaultTab: backend::lang.account.default_tab
+    paneCssClass:
+        0: first-tab
+        1: second-tab
+    icons:
+        backend::lang.account.user: icon-user
+        backend::lang.account.groups: icon-group
     fields:
+      red_facebook:
+            type: text
+            label: Fecebook
+            tab: General
+            span: true
+            cssClass: col-xs-6
+      red_instagram:
+            type: text
+            label: Instagram
+            tab: General
+            span: true
+            cssClass: col-xs-6
       fecha_limite:
         label: Fecha Limite
         type: datepicker
         mode: date
+        tab: General
+        span: true
+        cssClass: col-xs-6
+      numero_contacto:
+        label: Telefono de Contacto
+        type: number
+        mode: any
+        tab: General
+        span: true
+        cssClass: col-xs-6

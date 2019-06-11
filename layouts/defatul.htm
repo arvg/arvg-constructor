@@ -2,11 +2,19 @@ description = "default"
 ==
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        {% partial 'head' %}
-    </head>
-    <body>
-        {% page %}
-        {% partial 'footer' %}
-    </body>
+  <head>
+    {% partial 'head' %}
+  </head>
+  <body>
+  	
+  	<div class="bg-img1 size1 overlay1 p-t-24" style="background-image: url('{{ 'assets/images/bg02.jpg'|theme }}');">
+  		
+			{% partial 'superior' %}
+			
+			{% page %}
+			
+		</div>
+
+    {% partial 'footer' %}
+  </body>
 </html>
